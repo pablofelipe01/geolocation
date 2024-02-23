@@ -16,7 +16,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     
     try {
         if(!TW_ENGINE_URL || !TW_ACCESS_TOKEN || !TW_BACKEND_WALLET) {
-            throw new Error("Missing environment variables");
+            throw new Error("Missing variables");
         }
 
         const { 
